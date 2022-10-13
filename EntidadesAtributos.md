@@ -12,7 +12,7 @@ Para esta base de datos se van a considerar datos que se puedan llegar a utiliza
 
 ## Entidades
 
-### Desarolladora
+### Desarrolladora
 
 - Nombre
 - País de Origen
@@ -22,7 +22,7 @@ Para esta base de datos se van a considerar datos que se puedan llegar a utiliza
 
 - Nombre
 - Año de lanzamiento
-- Desarolladora
+- Desarrolladora
 - Publisher
 - Plataforma
 - Género
