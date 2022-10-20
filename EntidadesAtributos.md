@@ -12,40 +12,33 @@ Para esta base de datos se van a considerar datos que se puedan llegar a utiliza
 
 ## Entidades
 
-### Desarrolladora
-
-- Nombre
-- País de Origen
-- Estatus (First party, Third Party, Indie)
-
 ### Juego
 
-- Nombre
+- Nombre (MK)
 - Año de lanzamiento
-- Desarrolladora
-- Publisher
-- Plataforma
-- Género
-- Clasificación de edad
+- Publisher (FK)
+- Género (FK)
+
+### Publisher
+
+- Nombre (MK)
 
 ### Género
 
-- Plataformero
-- Pelea
-- RPG
-- Acción
-- Novela visual
-- Shooter
-- Hack'n'Slash
-- Puzzles
-- Estrategia
-- Simulador
+- Nombre (MK)
 
 ### Plataforma
 
-- PC
-- Playstation 4
-- Playstation 5
-- Xbox One
-- Xbox Series
-- Nintendo Switch
+- Nombre (MK)
+
+### Juego x Plataforma
+
+- Juego (FK)
+- Publisher (FK)
+
+## Tipos de relaciones
+
+- El videojuego con la empresa que fue el Publisher (1 a 1)
+- El videojuego con las plataformas donde salio (1 a M)
+- El videojuego con el género al que pertenece (1 a 1)
+- El publisher con los juegos que publico (1 a M)
