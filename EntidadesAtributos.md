@@ -14,7 +14,7 @@ Para esta base de datos se van a considerar datos que se puedan llegar a utiliza
 
 ### Juego
 
-- Juego_ID (MK)
+- Juego_ID (PK)
 - Nombre
 - Año de lanzamiento
 - Publisher (FK)
@@ -22,28 +22,27 @@ Para esta base de datos se van a considerar datos que se puedan llegar a utiliza
 
 ### Publisher
 
-- Publisher_ID (MK)
+- Publisher_ID (PK)
 - Nombre
 
 ### Género
 
-- Género-ID (MK)
+- Género-ID (PK)
 - Nombre
 
 ### Plataforma
 
-- Plataforma-ID (MK)
+- Plataforma-ID (PK)
 - Nombre
 
 ### Juego x Plataforma
 
-- JxP_ID (MK)
+- JxP_ID (PK)
 - Juego_ID (FK)
-- Publisher (FK)
+- Plataformas (FK)
 
 ## Tipos de relaciones
 
-- El videojuego con la empresa que fue el Publisher (1 a 1)
-- El videojuego con las plataformas donde salio (1 a M)
-- El videojuego con el género al que pertenece (1 a 1)
-- El publisher con los juegos que publico (1 a M)
+- El videojuego con la empresa que lo publico (1 a 1)
+- LAs plataformas donde el videojuego salio (1 a M)
+- El género de un videojuego (1 a 1)
