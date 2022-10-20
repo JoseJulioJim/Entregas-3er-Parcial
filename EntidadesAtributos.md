@@ -14,26 +14,31 @@ Para esta base de datos se van a considerar datos que se puedan llegar a utiliza
 
 ### Juego
 
-- Nombre (MK)
+- Juego_ID (MK)
+- Nombre
 - Año de lanzamiento
 - Publisher (FK)
 - Género (FK)
 
 ### Publisher
 
-- Nombre (MK)
+- Publisher_ID (MK)
+- Nombre
 
 ### Género
 
-- Nombre (MK)
+- Género-ID (MK)
+- Nombre
 
 ### Plataforma
 
-- Nombre (MK)
+- Plataforma-ID (MK)
+- Nombre
 
 ### Juego x Plataforma
 
-- Juego (FK)
+- JxP_ID (MK)
+- Juego_ID (FK)
 - Publisher (FK)
 
 ## Tipos de relaciones
